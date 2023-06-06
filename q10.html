@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function multiplyby(){
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = num1*num2;
+        }
+        function divideby(){
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = num1 / num2;
+        }
+    </script>
+</head>
+<body>
+    <Form>
+        1st Number: <input type="text" id="firstNumber"/><br>
+        2nd Number: <input type="text" id="secondNumber"/><br>
+        <input type="button" onclick="multiplyby()" value="Multipy"/>
+        <input type="button" onclick="divideby()" value="Divide"/>
+    </Form>
+    <p>
+        The Result is: <br>
+        <span id="result"></span>
+    </p>
+</body>
+</html>
